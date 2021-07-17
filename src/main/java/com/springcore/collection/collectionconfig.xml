@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd
+			            http://www.springframework.org/schema/context
+            			http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+
+	<bean name="emp0" class="com.springcore.collection.Employees">
+		<property name="EmpName" value="Radhe" />
+
+		<property name="phones">
+			<list>
+				<value>98765432</value>
+				<value>345678</value>
+				<value>98765</value>
+				<value>1234567</value>
+				<value>98765456</value>
+			</list>
+		</property>
+
+		<property name="addresses">
+			<set>
+				<value>Pune</value>
+				<value>Delhi</value>
+				<value>Kolkata</value>
+				<value>Usri</value>
+				<value>London</value>
+			</set>
+		</property>
+
+		<property name="courses">
+			<map>
+				<entry key="Java" value="1 month" />
+				<entry key="Python" value="2 month" />
+				<entry key="Typescript" value="3 month" />
+			</map>
+		</property>
+
+		<property name="props">
+			<props>
+				<prop key="name">Govind Namdev</prop>
+				<prop key="designation">Software Testing</prop>
+			</props>
+
+		</property>
+
+	</bean>
+
+</beans>
